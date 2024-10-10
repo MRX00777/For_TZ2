@@ -1,0 +1,222 @@
+@import url(/style/fonts.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: PR;
+  border: none;
+  background: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1300px;
+  width: 100%;
+}
+
+body {
+  background: white;
+}
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px dashed rgb(190, 218, 218);
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header__nav-logo {
+  color: rgb(2, 49, 49);
+  font-family: PB;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.header__nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.header__nav__list-link {
+  color: rgb(0, 28, 28);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.header__nav__list-link i {
+  color: red;
+  padding-right: 5px;
+}
+.header__nav__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+.header__nav__icons-icon {
+  color: black;
+}
+.header__nav__icons-icon.search {
+  color: rgb(36, 136, 136);
+}
+.header__nav__icons-icon i {
+  font-size: 18px;
+}
+.header__nav__icons-language {
+  color: rgb(0, 28, 28);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
+}
+.header__nav__icons-addbutton {
+  color: rgb(255, 255, 255);
+  font-family: PB;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 10px;
+  background: rgb(255, 46, 76);
+  padding: 13px 20px;
+  position: relative;
+  cursor: pointer;
+}
+.header__nav__icons-addbutton span {
+  width: 16px;
+  height: 16px;
+  border: 4px white solid;
+  background: rgb(96, 114, 130);
+  right: -9px;
+  top: 50%;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__nav__icons-addbutton span i {
+  display: none;
+}
+.header__nav__icons-addbutton:hover span {
+  width: 38px;
+  height: 38px;
+  right: -19px;
+  border: none;
+}
+.header__nav__icons-addbutton:hover span i {
+  display: block;
+}
+
+.discounts {
+  width: 290px;
+  background: rgb(240, 246, 246);
+  padding: 20px;
+  height: 100%;
+  min-height: 100vh;
+}
+.discounts-title {
+  color: rgb(2, 49, 49);
+  font-family: PB;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.discounts-counts {
+  color: rgb(96, 114, 130);
+  font-family: PB;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.discounts__cards {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+.discounts__cards__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background: white;
+}
+.discounts__cards__card img {
+  width: 100%;
+  height: 135px;
+  border-radius: 10px 10px 0px 0px;
+}
+.discounts__cards__card-company {
+  color: rgb(96, 114, 130);
+  font-family: MM;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 12px 12px 4px;
+  transition: 400ms;
+}
+.discounts__cards__card-company:hover {
+  color: rgb(255, 46, 76);
+}
+.discounts__cards__card-name {
+  color: rgb(0, 28, 28);
+  font-family: PB;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: 400ms;
+  padding: 0 12px 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.4em;
+  line-height: 1.2em;
+}
+.discounts__cards__card-name:hover {
+  color: rgb(36, 136, 136);
+}
+.discounts__cards__card .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.discounts__cards__card .row a {
+  color: rgb(96, 114, 130);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 118px;
+}/*# sourceMappingURL=main.css.map */
